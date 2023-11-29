@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+:root{
+  --shadow : 
+}
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+ }
+ body{
+    background: #232323;
+    color: white;
+ }
+.container{
+    display: flex;
+    flex-direction:column;
+    gap: 5px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.container h2{
+    text-align: center;
+}
+.datepicker{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.datepicker h3{
+    width: 50%;
+    flex-wrap: wrap;
+}
+#inputDob{
+    height: 25px;
+    width: 100%;
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    color-scheme: dark;
+}
+
+ #sec{
+     width: 100%;
+     height: 25px;
+     box-shadow: 1px 1px 5px rgba(0, 0, 0,300);
+     display: flex;
+     align-items: center;
+     justify-content: right;
+     padding-right: 1%;
+     border-radius: 10px;
+     background-color: rgb(73, 100, 255);
+     color: rgb(255, 255, 255);
+     transition: ease-in-out;
+     
+ }
+ #secs{
+     background-color: transparent;
+     font-weight: bold;
+     transition: ease-in-out;
+ }
+#min{
+    width: 100%;
+    height: 25px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0,300);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 1%;
+    border-radius: 10px;
+    background-color: rgb(255, 73, 228);
+    color: rgb(255, 255, 255);
+    transition: ease-in-out;
+
+}
+#mins{
+    background-color: transparent;
+     font-weight: bold;
+     transition: ease-in-out;
+
+}
+#hour{
+    width: 100%;
+    height: 25px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0,300);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 1%;
+    border-radius: 10px;
+    background-color: rgb(73, 255, 179);
+    color: rgb(255, 255, 255);
+    transition: ease-in-out;
+
+}
+#hours{
+    background-color: transparent;
+     font-weight: bold;
+     transition: ease-in-out;
+}
+#day{
+    width: 100%;
+    height: 25px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0,300);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 1%;
+    border-radius: 10px;
+    background-color: rgb(222, 255, 73);
+    color: rgb(0, 0, 0);
+    transition: ease-in-out;
+
+}
+#days{
+    background-color: transparent;
+     font-weight: bold;
+     transition: ease-in-out;
+}
+/* #weak{
+    width: 100%;
+    height: 25px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0,300);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 1%;
+    border-radius: 10px;
+    background-color: rgb(73, 100, 255);
+    color: rgb(255, 255, 255);
+    transition: ease-in-out;
+
+}
+#weaks{
+    background-color: transparent;
+     font-weight: bold;
+     transition: ease-in-out;
+} */
+#month{
+    width: 100%;
+    height: 25px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0,300);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 1%;
+    border-radius: 10px;
+    background-color: rgb(73, 100, 255);
+    color: rgb(255, 255, 255);
+    transition: ease-in-out;
+
+}
+#months{
+    background-color: transparent;
+     font-weight: bold;
+     transition: ease-in-out;
+}
+
+#year{
+    width: 100%;
+    height: 25px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0,300);
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    padding-right: 1%;
+    border-radius: 10px;
+    background-color: rgb(73, 100, 255);
+    color: rgb(255, 255, 255);
+    transition: ease-in-out;
+
+}
+#years{
+    background-color: transparent;
+     font-weight: bold;
+     transition: ease-in-out;
+}
+
+
+
+
+/* Code for digital clock */
+
+.container1 {
+    width: 90%;
+    padding: 10px 0px 30px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px auto;
+    border-radius: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+  }
+  .container1 h2{
+    color: white;
+    margin: 20px 0px;
+    padding-right: 40px;
+  }
+  
+  #time {
+    display: flex;
+    gap: 40px;
+    color: #fff;
+  }
+  
+  #time .circle {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #time .circle svg {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    transform: rotate(270deg);
+  }
+  
+  #time .circle svg circle {
+    width: 100%;
+    height: 100%;
+    fill: transparent;
+    stroke: rgb(255, 255, 255);
+    stroke-width: 8px;
+    transform: translate(5px, 5px);
+  }
+  
+  #time .circle svg circle:nth-child(2) {
+    stroke: var(--color);
+    stroke-dasharray: 440;
+  }
+  
+  #time div {
+    position: absolute;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+  #time div span {
+    position: absolute;
+    transform: translate(-50%, 0px);
+    font-size: 0.5rem;
+    font-weight: 300;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+  }
+  
+  #time .ap {
+    position: relative;
+    font-size: 1rem;
+    transform: translate(-20px);
+  }
+  
+  .dots {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+  }
+  
+  .dots::before {
+    content: '';
+    position: absolute;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+    background: var(--color);
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--color), 0 0 60px var(--color  );
+  }

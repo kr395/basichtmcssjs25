@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Life Clock</title>
+    <link rel="stylesheet" href="lifeclock.css" />
+    <script defer src="lifeclock.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="datepicker">
+        <h3>Chose your Date of Birth</h3>      
+            <div>
+                <input id="inputDob" type="datetime-local"
+                  value="2000-12-26T22:00" onchange="getDOB()" /> 
+            </div>
+      </div>
+
+      <h2>
+        <span id="duration"></span>
+      </h2>
+      <div class="divs" id="sec"><span class="spans" id="secs"></span></div>
+      <div class="divs" id="min"><span class="spans" id="mins"></span></div>
+      <div class="divs" id="hour"><span class="spans" id="hours"></span></div>
+      <div class="divs" id="day"><span class="spans" id="days"></span></div>
+      <div class="divs" id="month"><span class="spans" id="months"></span></div>
+      <div class="divs" id="year"><span class="spans" id="mins"></span></div>
+    </div>
+
+
+
+    <!-- Time circle -->
+    
+    <div class="container1">
+        <h2>Current Time</h2>
+        <div id="time">
+          <div class="circle" style="--color: #ff2972">
+            <div class="dots h_dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70" id="hh"></circle>
+            </svg>
+            <div id="hours1">00</div>
+          </div>
+          <div class="circle" style="--color: #fee800">
+            <div class="dots m_dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70" id="mm"></circle>
+            </svg>
+            <div id="minutes">00</div>
+          </div>
+          <div class="circle" style="--color: #04fc43">
+            <div class="dots s_dot"></div>
+            <svg>
+              <circle cx="70" cy="70" r="70"></circle>
+              <circle cx="70" cy="70" r="70" id="ss"></circle>
+            </svg>
+            <div id="seconds">00</div>
+          </div>
+          <div class="ap">
+            <div id="ampm">AM</div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
