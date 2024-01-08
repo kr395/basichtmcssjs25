@@ -24,6 +24,7 @@ function getDOB() {
     // Getting input from html input element 
     localStorage.setItem("inputDob", document.getElementById("inputDob").value)
     let data = localStorage.getItem("inputDob");
+    data = document.getElementById("inputDob").value;
 
     // Convert input data to usable format 
     // as day,month and year 
